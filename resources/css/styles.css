@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Colors */
+:root {
+  --backgroud-color: #010630;
+  --secondary-color: #5204FE;
+  --text-color: #fff;
+  --em-color: #F508FF;
+}
+
+/* Universal styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--backgroud-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 500;
+}
+
+em {
+  font-style: normal;
+  color: var(--em-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, #5204FE, #F508FF);
+  text-wrap: nowrap;
+}
+
+/* Specific Styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  padding: 1rem 0;
+  width: 1135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 4rem;
+  height: auto;
+}
+
+nav h1 {
+  display: none;
+}
+
+.nav-links {
+  width: 40%;  
+}
+
+.nav-links a {
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline;
+}
+
+/* Navbar media queries */
+@media only screen and (max-width: 1200px) {
+  nav {
+    margin: 0 2rem;
+  }
+
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav h1 {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  nav {
+    margin: 0 1rem;
+  }
+}
+
+.main {
+  margin-top: 100px;
+}
+
+/* Hero Section */
+
+
+
+.hero img {
+  width: 100px;
+  height: auto;
+}
+
+/* Persons */
+.person img {
+  width: 100px;
+  height: auto;
+}
