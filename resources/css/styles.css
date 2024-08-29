@@ -34,6 +34,33 @@ em {
 
 h1, h2, h3 {
   font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 1135px;
+}
+
+.content {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .center {
+    width: 100%;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
 }
 
 .button {
@@ -41,6 +68,11 @@ h1, h2, h3 {
   border-radius: 2rem;
   background: linear-gradient(to right, #5204FE, #F508FF);
   text-wrap: nowrap;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 /* Specific Styles */
@@ -73,10 +105,6 @@ nav h1 {
 
 .nav-links {
   width: 40%;  
-}
-
-.nav-links a {
-  font-weight: 300;
 }
 
 nav ul {
@@ -122,27 +150,25 @@ nav li {
 /* Hero Section */
 .hero {
   /* padding-top: 8rem; */
-  height: 35rem;
+  height: 37rem;
   display: flex;
   justify-content: center;
+  align-items: unset;
   background: linear-gradient(to right, #010630, #02094a);
-}
-
-.hero .center {
-  width: 1135px;
 }
 
 .hero .content {
   height: 100%;
-  display: flex;
+  padding: 0;
+  align-items: unset;
 }
 
 .hero .text {
-  flex-shrink: 5;
+  flex: 2 1;
 }
 
 #sifu-logo {
-  flex-shrink: 1;
+  flex: 1 1;
 }
 
 #sifu {
@@ -151,13 +177,9 @@ nav li {
 
 .hero h1 {
   margin: 0;
-  padding-top: 3rem;
-  font-size: 6rem;
+  padding-top: 4rem;
+  font-size: 5.7rem;
   line-height: 1.2;
-}
-
-.hero .text {
-  flex-shrink: 2;
 }
 
 .hero .actions {
@@ -172,17 +194,20 @@ nav li {
 }
 
 @media only screen and (max-width: 1200px) {
-  .hero .center {
-    width: 100%;
-  }
-
   .hero {
-    padding-left: 2rem; 
-    padding-right: 2rem;
+    height: 32rem;
   }
 
   .hero h1 {
     font-size: 5rem;
+  }
+
+  .hero .center {
+    padding: 0;
+  }
+
+  .hero .content {
+    padding: 0 2rem;
   }
 }
 
@@ -237,7 +262,71 @@ nav li {
 }
 
 /* About us section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.about .content {
+  gap: 3rem;
+}
+
+.about .left {
+  flex: 1.3 1;
+}
+
+.about .card-container {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 47%;
+  height: 9rem;
+  border-radius: 1rem;
+  background-color: #1b0057;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h3, .card p {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card h3 {
+  font-size: 2.5rem;
+}
+
+.card p {
+  font-weight: 600;
+}
+
+/* Popular Games */
+.popular {
+  background: linear-gradient(to left, #010630, #02094a);
+}
+
+.popular .content {
+  flex-direction: column;
+}
+
+.popular .text {
+  text-align: center;
+}
+
+.popular h2, .popular p {
+  margin: 0;
+}
 
 /* Persons */
 .person img {
