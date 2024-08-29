@@ -45,12 +45,13 @@ h1, h2, h3 {
 
 /* Specific Styles */
 header {
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #010630, #02094a);
 }
 
 nav {
@@ -99,6 +100,7 @@ nav li {
   .nav-links {
     width: 50%;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,7 +121,7 @@ nav li {
 
 /* Hero Section */
 .hero {
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
   height: 35rem;
   display: flex;
   justify-content: center;
@@ -207,10 +209,6 @@ nav li {
 
   .hero h1, .hero p {
     text-align: center;
-  }
-
-  .hero p, .hero a {
-    font-size: .8rem;
   }
 
   #sifu-logo {
