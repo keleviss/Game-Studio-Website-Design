@@ -117,18 +117,129 @@ nav li {
   }
 }
 
-.main {
-  margin-top: 100px;
-}
-
 /* Hero Section */
-
-
-
-.hero img {
-  width: 100px;
-  height: auto;
+.hero {
+  padding-top: 8rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #010630, #02094a);
 }
+
+.hero .center {
+  width: 1135px;
+}
+
+.hero .content {
+  height: 100%;
+  display: flex;
+}
+
+.hero .text {
+  flex-shrink: 5;
+}
+
+#sifu-logo {
+  flex-shrink: 1;
+}
+
+#sifu {
+  display: none;
+}
+
+.hero h1 {
+  margin: 0;
+  padding-top: 3rem;
+  font-size: 6rem;
+  line-height: 1.2;
+}
+
+.hero .text {
+  flex-shrink: 2;
+}
+
+.hero .actions {
+  padding-top: 2.5rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+} 
+
+.hero .content .button {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero .center {
+    width: 100%;
+  }
+
+  .hero {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 30rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero {
+    height: 25rem;
+  }
+
+  .hero h1, .hero p {
+    text-align: center;
+  }
+
+  .hero p, .hero a {
+    font-size: .8rem;
+  }
+
+  #sifu-logo {
+    display: none;
+  }
+
+  .hero .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero h1 {
+    font-size: 2.125rem;
+  }
+}
+
+/* About us section */
+
 
 /* Persons */
 .person img {
