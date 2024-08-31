@@ -65,6 +65,14 @@ section {
   }
 }
 
+@media only screen and (max-width: 520px) {
+  .center {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .button {
   padding: 0.7rem 1.5rem;
   border-radius: 2rem;
@@ -99,7 +107,7 @@ section h2 {
   }
 
   section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -291,6 +299,12 @@ nav li {
 
 }
 
+@media only screen and (max-width: 520px) {
+  .hero .content {
+    padding: 0 1rem;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -332,7 +346,10 @@ nav li {
 }
 
 .card {
-  width: 47%;
+  /* width: 47%; */
+  flex: 1 1;
+  min-width: 11.5rem;
+  /* max-width: 15rem; */
   height: 9rem;
   border-radius: 1rem;
   background-color: #1b0057;
@@ -358,6 +375,39 @@ nav li {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 992px) {
+  .about .text {
+    text-align: center;
+  }
+
+  .card {
+    min-width: unset;
+    flex: 1 1 45%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .card h3 {
+    font-size: 2rem;
+  }
+
+  .card p {
+    padding: 0 .5rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .card {
+    flex: 1 1 40%;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
 /* Popular Games */
 .popular {
   background: linear-gradient(to left, #010630, #02094a);
@@ -368,7 +418,14 @@ nav li {
 }
 
 .popular .text {
+  width: 70%;
   text-align: center;
+}
+
+@media only screen and (max-width: 520px) {
+  .popular .text {
+    width: 100%;
+  }
 }
 
 .popular h2 {
@@ -445,7 +502,78 @@ nav li {
 }
 
 /* Persons */
-.person img {
-  width: 100px;
-  height: auto;
+.team .content {
+  flex-direction: column;
 }
+
+.people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team .text {
+  width: 70%;
+  text-align: center;
+}
+
+.team h2 {
+  margin: 0;
+}
+
+.people {
+  display: flex;
+  gap: 2rem;
+}
+
+.person {
+  flex: 1 1;
+  height: fit-content;
+  min-width: 16rem;
+  max-width: 17rem;
+  background-color: #02083d;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 
+.profile-pic {
+  border: 1px solid #5204FE;
+} */
+
+.person img {
+  width: 15rem;
+  height: auto;
+  border-radius: 1rem;
+  border: 2px solid #5204FE;
+}
+
+.person .name-role {
+  text-align: center;
+}
+
+.name-role h4 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+} 
+
+.name-role p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 993px) {
+  .people {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  .team .text {
+    width: 100%;
+  }
+}
+
