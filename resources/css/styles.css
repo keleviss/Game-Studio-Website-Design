@@ -579,7 +579,7 @@ nav li {
 
 /* Footer */
 footer {
-  padding: 6rem 0;
+  padding-top: 6rem;
   background: linear-gradient(to right, #010630, #02094a);
   display: flex;
   justify-content: center;
@@ -593,11 +593,12 @@ footer .content {
   padding: 4rem;
   border-radius: 1rem;
   border: 2px solid #ffffff99;
-  background-color: #02083d;
+  background-color: #02094a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .newsletter h2 {
@@ -611,11 +612,125 @@ footer .content {
   justify-content: center;
 }
 
-.email-list input[type='email'] {
-  width: 50%;
-  color: #fff;
-  padding: 1rem 1.5rem;
-  background-color: transparent;
+.email-list form {
+  width: 60%;
+  padding: .6rem .9rem .6rem 1.5rem;
   border-radius: 3rem;
   border: 1px solid #5204FE;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-list input[type='email'] {
+  flex: 1 1;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: .9rem;
+}
+
+.email-list input[type='email']:focus {
+  outline: none;
+  border: none;
+}
+
+form .button {
+  border-radius: 10rem;
+  padding: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form img {
+  width: 1.25rem;
+  height: auto;
+
+}
+
+@media only screen and (max-width: 830px) {
+  .email-list form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .newsletter h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .newsletter {
+    padding: 3rem 2rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.7rem;
+  }
+
+  .newsletter p {
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .newsletter h2 {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .newsletter {
+    padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .newsletter h2 {
+    padding: 0 1rem;
+  }
+}
+
+.info, .socials, .contact, .phone, .email, .copy {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 2px solid #5204FE;
+  border-bottom: 2px solid #5204FE;
+  justify-content: space-between;
+}
+
+.socials {
+  flex: 1.5 1;
+  justify-content: flex-start;
+}
+
+.contact {
+  flex: 2.5 1;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.socials, .phone, .email {
+  gap: 1rem;
+}
+
+.copy {
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.copy p:nth-child(1) {
+  padding-right: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.copy p:last-child {
+  padding-left: 1rem;
 }
