@@ -717,6 +717,8 @@ form img {
 
 .socials, .phone, .email {
   gap: 1rem;
+  flex-wrap: wrap;
+  text-wrap: nowrap;
 }
 
 .copy {
@@ -733,4 +735,45 @@ form img {
 
 .copy p:last-child {
   padding-left: 1rem;
+}
+
+.info img {
+  width: 1.2rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 827px) {
+  .socials p, .phone p, .email p {
+    margin: 0;
+  }
+
+  .socials p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .info, .contact, .phone, .email {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials {
+    justify-content: center;
+    text-align: center  ;
+  }
+
+  .info {
+    gap: 2.5rem;
+  }
 }

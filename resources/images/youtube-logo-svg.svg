@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55" width="55" height="55">
+	<title>youtube-logo-svg</title>
+	<defs>
+		<image  width="55" height="39" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAnCAMAAACc0yDvAAAAAXNSR0IB2cksfwAAAGlQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxsbGAAAAxsbGMzMzxsbGxsbGLCwsAAAAxsbGAAAAAAAAxsbGAAAAAAAAAAAAfip64QAAACN0Uk5TABAgMEBQYHCAj7/f7/+fz6+lWMMQmHDYML/Lx//I48/A8LffM5vpAAABSklEQVR4nJ3WDW+CMBAG4PcoHyrOLcuy+P9/35IpcyJSufX4cNlyBdsLAVN5cmna60EYg0Au5CG/Mdy4/4vlYrmYf1+XW5aKeSQ6c7aTM9vuITOlqgZn1o+lukdy7N3GhDHg2jiXrUIZ+OTcOg12qC2hTMJdeyE8hTOYAyVlhOMTpesIhy/KC2W4y+28O1GRK8PJ8ZWuc+7sc3ijbkaeaZXpDngn65U1qcveO+xdkVQRzqXMiT41d6EdK8OTw7641aUil5ykREof4Q77TXtQ8s3Oz4XJjVLWS05XSy4pdCXOv+5+Jevnc7TyK3H6/qxmlexPtY4YC0fjN0UcZ5D6i6132kaw5Bh9nuE5qKkMYev48zpigrItgJdbqOv7EWgXOENbj31arV1fcNtgdK7BG8rsQmNiTtu8a659kn/7kKbvifs4Y/qa+PPiD2DCbWjTjcQmAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Black &amp; White 1" href="#img1" x="0" y="8"/>
+</svg>
