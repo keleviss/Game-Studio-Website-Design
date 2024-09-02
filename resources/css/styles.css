@@ -78,6 +78,7 @@ section {
   border-radius: 2rem;
   background: linear-gradient(to right, #5204FE, #F508FF);
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 section h2 {
