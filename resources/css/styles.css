@@ -76,9 +76,17 @@ section {
 .button {
   padding: 0.7rem 1.5rem;
   border-radius: 2rem;
-  background: linear-gradient(to right, #5204FE, #F508FF);
+  /* background: linear-gradient(to right, #5204FE, #F508FF); */
+  background-color: #5204FE;
   text-wrap: nowrap;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.button:hover {
+  background-color: #F508FF;
+  transform: scale(110%);
 }
 
 section h2 {
@@ -256,9 +264,16 @@ nav li {
   display: inline-block;
 }
 
-.hero .button:last-child {
+.hero .outline {
   background: none;
-  outline: 2px solid #d603de;
+  outline: 2px solid #5204FE;
+  transition: outline 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.hero .outline:hover {
+  outline: 2px solid #F508FF;
+  transform: scale(110%);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -528,7 +543,7 @@ nav li {
 }
 
 .item:hover {
-  outline: .1rem solid grey;
+  outline: .1rem solid #5204FE;
 }
 
 .item-filter:hover {
@@ -567,7 +582,7 @@ nav li {
   height: fit-content;
   min-width: 16rem;
   max-width: 17rem;
-  background-color: #02083d;
+  background-color: #02094a;
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -584,7 +599,7 @@ nav li {
   width: 15rem;
   height: auto;
   border-radius: 1rem;
-  border: 2px solid #5204FE;
+  border: 1px solid #5204FE;
 }
 
 .person .name-role {
@@ -770,6 +785,10 @@ form img {
 
 .copy p:last-child {
   padding-left: 1rem;
+}
+
+.info a {
+  height: 2.2rem;
 }
 
 .info img {
