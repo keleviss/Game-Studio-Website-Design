@@ -16,3 +16,5 @@ Welcome to the repository for the Game Studio Website. This project is a fully r
 ## Deployment
 
 The page is deployed with GitHub pages and you can access it -> [here](https://keleviss.github.io/Game-Studio-Website-Design/index.html)
+
+Resize your browser window to see the web page adjust through different screen sizes.
