@@ -1,6 +1,6 @@
 # Game Studio Website
 
-Welcome to the repository for the Game Studio Website. This project is a fully responsive website designed and developed to showcase a game studio's portfolio, services, and contact information. The website is built using modern web technologies, including HTML5, CSS3. The layout is crafted with Flexbox and is enhanced with media queries to ensure it is fully responsive across different screen sizes.
+This project is a fully responsive website designed and developed to showcase a concept for a game studio's portfolio, services, and contact information. The website is built using modern web technologies, including HTML5, CSS3. The layout is crafted with Flexbox and is enhanced with media queries to ensure it is fully responsive across different screen sizes.
 
 ## Features
 
